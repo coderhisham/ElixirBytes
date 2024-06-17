@@ -9,7 +9,7 @@ export default function Home() {
           <h1>ElixirBytes</h1>
         </div>
       </div>
-      <div className="soon">
+      <div className="soon ">
         <h1>Coming Soon...</h1>
         <h3>Stay Tuned!!!</h3>
       </div>
