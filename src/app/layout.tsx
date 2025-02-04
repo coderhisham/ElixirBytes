@@ -18,6 +18,32 @@ export const metadata: Metadata = {
   icons: {
     icon: "/assets/icons/ElixirBytes.png",
   },
+  metadataBase: new URL("https://elixirbytes.com"),
+  openGraph: {
+    title: "ElixirBytes",
+    description: "Tech solutions for the modern world",
+    url: "https://elixirbytes.com",
+    siteName: "ElixirBytes",
+    images: [
+      {
+        url: "/assets/icons/ElixirBytes.png",
+        width: 1200,
+        height: 630,
+      },
+    ],
+    locale: "en_US",
+    type: "website",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "ElixirBytes",
+    description: "Tech solutions for the modern world",
+    images: ["/assets/icons/ElixirBytes.png"],
+  },
+  other: {
+    "whatsapp-platform": "WhatsApp",
+    "apple-mobile-web-app-capable": "yes",
+  },
 };
 
 export default function RootLayout({
