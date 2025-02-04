@@ -267,11 +267,11 @@ const PopupForm = ({
 
   return (
     <div
-      className="fixed inset-0 bg-black/80 backdrop-blur-sm z-50 flex items-center justify-center p-4"
+      className="fixed inset-0 bg-black/80 backdrop-blur-sm z-50 flex items-start justify-center overflow-y-auto"
       onClick={onClose}
     >
       {showSuccess ? (
-        <div className="bg-green-500/10 border-2 border-green-500 p-6 rounded-lg animate-fadeIn flex flex-col justify-center items-center">
+        <div className="bg-green-500/10 border-2 border-green-500 p-6 rounded-lg animate-fadeIn flex flex-col justify-center items-center min-h-min">
           <h3 className="text-xl font-bold text-green-400 mb-2">
             Successfully Submitted!
           </h3>
@@ -279,7 +279,7 @@ const PopupForm = ({
         </div>
       ) : (
         <div
-          className="bg-black border-2 border-green-500 w-full max-w-md p-6 relative animate-fadeIn"
+          className="bg-black border-2 border-green-500 w-full max-w-2xl m-4 p-4 sm:p-6 relative animate-fadeIn min-h-min"
           onClick={(e) => e.stopPropagation()}
         >
           <button
