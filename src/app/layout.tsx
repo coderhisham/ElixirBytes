@@ -15,6 +15,9 @@ const geistMono = Geist_Mono({
 export const metadata: Metadata = {
   title: "ElixirBytes",
   description: "Tech solutions for the modern world",
+  icons: {
+    icon: "/assets/icons/ElixirBytes.png",
+  },
 };
 
 export default function RootLayout({
