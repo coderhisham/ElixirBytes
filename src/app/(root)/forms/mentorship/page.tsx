@@ -465,12 +465,17 @@ export default function Home() {
 
   const topics = [
     {
+      title: "Full Stack Development",
+      description: "Frontend, Backend, and Database integration",
+      icon: "⚡",
+    },
+    {
       title: "Version Control Mastery",
       description: "Git, GitHub, and collaborative development workflows",
       icon: "🔄",
     },
     {
-      title: "Container Orchestration",
+      title: "Devops Fundamentals",
       description: "Docker, Kubernetes, and deployment strategies",
       icon: "🐳",
     },
@@ -478,11 +483,6 @@ export default function Home() {
       title: "Scalable Architecture",
       description: "Building and scaling web applications for performance",
       icon: "📈",
-    },
-    {
-      title: "Full Stack Development",
-      description: "Frontend, Backend, and Database integration",
-      icon: "⚡",
     },
   ];
 
