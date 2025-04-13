@@ -4,7 +4,6 @@ import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { getUserByName } from "@/data/projData";
 import {
-  Code,
   PlaySquare,
   Linkedin,
   ExternalLink,
