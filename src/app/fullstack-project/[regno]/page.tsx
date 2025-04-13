@@ -1,5 +1,6 @@
 "use client";
-import React from "react";
+
+import React, { useEffect, useState } from "react";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
@@ -12,15 +13,15 @@ import {
   Github,
 } from "lucide-react";
 import Link from "next/link";
+import { useParams } from "next/navigation";
 
-// Make this a server component with async handling
-export default async function ProjectPage({
-  params,
-}: {
-  params: { regno: string };
-}) {
-  // Extract regno from params
-  const { regno } = params;
+// Convert to client component to avoid server component type errors
+export default function ProjectPage() {
+  // Use the useParams hook instead of props
+  const params = useParams();
+  const regno = params.regno as string;
+
+  // Get user data
   const userData = getUserByName(regno);
 
   return (
