@@ -20,7 +20,7 @@ interface PageProps {
 
 export default function ProjectPage({ params }: PageProps) {
   const { regno } = params;
-  const userData = getUserByName(regno);
+  const userData = getUserByName(regno as string);
 
   return (
     <div className="min-h-screen bg-zinc-950 text-white p-8 flex flex-col justify-between">
