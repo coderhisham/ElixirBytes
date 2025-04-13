@@ -12,14 +12,8 @@ import {
 } from "lucide-react";
 import Link from "next/link";
 
-// Use the correct param typing for Next.js App Router
-interface PageProps {
-  params: {
-    regno: string;
-  };
-}
-
-export default function ProjectPage({ params }: PageProps) {
+// Use the correct Next.js App Router typing pattern
+export default function ProjectPage({ params }: { params: { regno: string } }) {
   // Extract regno from params
   const { regno } = params;
   const userData = getUserByName(regno);
