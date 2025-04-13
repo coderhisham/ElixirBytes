@@ -12,6 +12,7 @@ import {
 } from "lucide-react";
 import Link from "next/link";
 
+// Use the correct param typing for Next.js App Router
 interface PageProps {
   params: {
     regno: string;
@@ -19,8 +20,9 @@ interface PageProps {
 }
 
 export default function ProjectPage({ params }: PageProps) {
+  // Extract regno from params
   const { regno } = params;
-  const userData = getUserByName(regno as string);
+  const userData = getUserByName(regno);
 
   return (
     <div className="min-h-screen bg-zinc-950 text-white p-8 flex flex-col justify-between">
@@ -31,7 +33,7 @@ export default function ProjectPage({ params }: PageProps) {
               <div>
                 <CardTitle className="text-4xl font-medium flex items-center justify-between text-white">
                   <span className="bg-gradient-to-r from-white to-zinc-400 bg-clip-text text-transparent">
-                    {userData?.name}
+                    {userData?.name || "Not Found"}
                   </span>
                   <Badge
                     variant="outline"
@@ -73,12 +75,12 @@ export default function ProjectPage({ params }: PageProps) {
                 <div>
                   <Button
                     variant="secondary"
-                    className=" bg-zinc-800 hover:bg-zinc-700 text-white py-8 text-xl font-medium flex items-center justify-center gap-3 rounded-xl transition-all duration-300 hover:shadow-[0_0_15px_rgba(39,39,42,0.8)] hover:-translate-y-1 group w-full"
+                    className="bg-zinc-800 hover:bg-zinc-700 text-white py-8 text-xl font-medium flex items-center justify-center gap-3 rounded-xl transition-all duration-300 hover:shadow-[0_0_15px_rgba(39,39,42,0.8)] hover:-translate-y-1 group w-full"
                     asChild={!!userData?.projectDemoUrl}
                   >
                     {userData?.projectDemoUrl ? (
                       <Link
-                        href={""}
+                        href={userData.projectDemoUrl}
                         target="_blank"
                         rel="noopener noreferrer"
                         className="w-full"
