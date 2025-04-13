@@ -12,8 +12,12 @@ import {
 } from "lucide-react";
 import Link from "next/link";
 
-// Use the correct Next.js App Router typing pattern
-export default function ProjectPage({ params }: { params: { regno: string } }) {
+// Make this a server component with async handling
+export default async function ProjectPage({
+  params,
+}: {
+  params: { regno: string };
+}) {
   // Extract regno from params
   const { regno } = params;
   const userData = getUserByName(regno);
