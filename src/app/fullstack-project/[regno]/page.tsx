@@ -82,7 +82,7 @@ export default function ProjectPage() {
                     {userData?.projectDemoUrl ? (
                       <Link
                         href={""}
-                        target="_blank"
+                        target=""
                         rel="noopener noreferrer"
                         className="w-full"
                       >
@@ -131,8 +131,8 @@ export default function ProjectPage() {
                   >
                     {userData?.videoUrl ? (
                       <Link
-                        href={userData.videoUrl}
-                        target="_blank"
+                        href={""}
+                        target=""
                         rel="noopener noreferrer"
                         className="w-full"
                       >
