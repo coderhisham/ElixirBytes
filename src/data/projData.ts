@@ -19,7 +19,7 @@ export const usersData: UserData[] = [
   {
     regNo: "12303350",
     name: "Aiswairya Amrithraj E",
-    linkedInUrl: "https://www.linkedin.com/in/",
+    linkedInUrl: "https://www.linkedin.com/in/aiswarya-amrithraj-e/",
     gitHubUrl: "https://www.github.com/",
     videoUrl: "https://www.youtube.com/",
     projectDemoUrl: "https://coderhisham.com",
@@ -27,7 +27,7 @@ export const usersData: UserData[] = [
   {
     regNo: "12319689",
     name: "Rasin Haris PK",
-    linkedInUrl: "https://www.linkedin.com/in/",
+    linkedInUrl: "https://www.linkedin.com/in/rasinharispk/",
     gitHubUrl: "https://www.github.com/",
     videoUrl: "https://www.youtube.com/",
     projectDemoUrl: "https://coderhisham.com",
@@ -35,7 +35,7 @@ export const usersData: UserData[] = [
   {
     regNo: "12320175",
     name: "Vinay Kumar",
-    linkedInUrl: "https://www.linkedin.com/in/",
+    linkedInUrl: "https://www.linkedin.com/in/vinay-kumar-b07a1a28a/",
     gitHubUrl: "https://www.github.com/",
     videoUrl: "https://www.youtube.com/",
     projectDemoUrl: "https://coderhisham.com",

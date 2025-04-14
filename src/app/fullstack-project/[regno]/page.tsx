@@ -77,10 +77,11 @@ export default function ProjectPage() {
                     variant="secondary"
                     className="bg-zinc-800 hover:bg-zinc-700 text-white py-8 text-xl font-medium flex items-center justify-center gap-3 rounded-xl transition-all duration-300 hover:shadow-[0_0_15px_rgba(39,39,42,0.8)] hover:-translate-y-1 group w-full"
                     asChild={!!userData?.projectDemoUrl}
+                    disabled={true}
                   >
                     {userData?.projectDemoUrl ? (
                       <Link
-                        href={userData.projectDemoUrl}
+                        href={""}
                         target="_blank"
                         rel="noopener noreferrer"
                         className="w-full"
