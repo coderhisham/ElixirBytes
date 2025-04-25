@@ -131,7 +131,7 @@ export default function ProjectPage() {
                   >
                     {userData?.videoUrl ? (
                       <Link
-                        href={""}
+                        href={userData?.videoUrl}
                         target=""
                         rel="noopener noreferrer"
                         className="w-full"
